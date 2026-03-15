@@ -1,0 +1,277 @@
+<HTML>
+<HEAD>
+    <TITLE>Toddly Education for Kids</TITLE>
+  <STYLE>
+    * 
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	 }
+    body 
+	{
+      font-family: 'Poppins', sans-serif;
+      background-color: white;
+    }
+
+    
+    .top-bar
+	{
+      background-color: #5d2175; 
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 20px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .top-bar .phone, .top-bar .opening-time 
+	{
+      display: flex;
+      align-items: center;
+    }
+    .top-bar .phone i, .top-bar .opening-time i 
+	{
+      margin-right: 8px;
+      font-size: 16px;
+    }
+    .top-bar .opening-time span.orange 
+	{
+      color: orange;
+      margin-right: 6px;
+    }
+    .top-bar .social-icons a 
+	{
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.2);
+      transition: background-color 0.3s ease;
+    }
+    .top-bar .social-icons a:hover
+	{
+      background-color: white;
+      color: #5d2175;
+    }
+
+    
+    header
+	{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 25px;
+      background-color: white;
+      border-bottom: 2px solid #f2f2f2;
+    }
+    .logo 
+	{
+      font-weight: 700;
+      font-size: 30px;
+      color: #5d2175;
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+    }
+    .logo .logo-icon
+	{
+      width: 36px;
+      height: 36px;
+      margin-right: 8px;
+    }
+    nav 
+	{
+      display: flex;
+      gap: 25px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    nav a 
+	{
+      text-decoration: none;
+      color: #222;
+      padding: 10px 8px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover, nav a.active 
+	{
+      background-color: #5d2175;
+      color: white;
+    }
+
+    
+    .header-icons 
+	{
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+    .search-icon, .menu-icon 
+	{
+      width: 28px;
+      height: 28px;
+      border: 2px solid #5d2175;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+    .search-icon:hover, .menu-icon:hover 
+	{
+      background-color: #5d2175;
+      border-color: #5d2175;
+    }
+    
+    .search-icon:before 
+	{
+      content: "";
+      width: 12px;
+      height: 12px;
+      border: 2px solid #5d2175;
+      border-radius: 50%;
+      position: absolute;
+      top: 6px;
+      left: 7px;
+    }
+    .search-icon:after 
+	{
+      content: "";
+      width: 8px;
+      height: 2px;
+      background-color: #5d2175;
+      position: absolute;
+      top: 16px;
+      left: 14px;
+      transform: rotate(45deg);
+      transform-origin: left center;
+      border-radius: 1px;
+    }
+    
+    .menu-icon div 
+	{
+      width: 14px;
+      height: 2px;
+      background-color: #5d2175;
+      border-radius: 1px;
+      margin: 3px 0;
+    }
+
+    
+    .hero 
+	{
+      position: relative;
+      background: linear-gradient(90deg, #d68126 0%, #862e84 100%);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 40px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .hero-text
+	{
+      max-width: 400px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1.15;
+      font-family: 'Baloo 2', cursive, 'Poppins';
+    }
+    .hero-text small 
+	{
+      font-weight: 600;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 12px;
+      color: #fff6ca;
+    }
+    .hero-subtext 
+	{
+      font-weight: 600;
+      font-size: 16px;
+      margin-top: 12px;
+      max-width: 340px;
+    }
+    .hero-image 
+	{
+      max-width: 350px;
+      flex-shrink: 0;
+    }
+    .hero-image img 
+	{
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+      cursor: pointer;
+    }
+
+  </STYLE>
+</HEAD>
+<BODY>
+
+  <div class="top-bar">
+    <div class="phone">
+      <i>📞</i> +1 333 456 888
+    </div>
+    <div class="opening-time">
+      <i>⏲️</i> <span class="orange">Opening Time :</span> 9:30am-5:30pm
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="YouTube">▶</a>
+    </div>
+  </div>
+
+  <HEADER>
+    <div class="logo">
+      <div class="logo-icon"></div>
+	  <img src="D:\Sem-3\HTML\Tamplate\Images2\Logo2.jpg">
+    </div>
+    <NAV>
+      <a href="#" class="active">HOME</a>
+      <a href="D:\Sem-3\HTML\Tamplate\Page8.html">ABOUT</a>
+      <a href="D:\Sem-3\HTML\Tamplate\Page5and6.html">PAGES</a>
+      <a href="D:\Sem-3\HTML\Tamplate\Page10.html">SHOP</a>
+      <a href="D:\Sem-3\HTML\Tamplate\Page9.html">BLOG</a>
+      <a href="D:\Sem-3\HTML\Tamplate\Page7.html">CONTACT</a>
+	  <a href="D:\Sem-3\HTML\Tamplate\Page12.html">INFO</a>
+    </NAV>
+    <div class="header-icons">
+      <div class="search-icon" role="button" title="Search"></div>
+      <div class="menu-icon" role="button" title="Menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </HEADER>
+
+  <SECTION class="hero">
+    <div class="hero-text">
+      <small>Fun Happens!</small>
+      Best Education<br />For Kids
+      <div class="hero-subtext">
+        Learning Program With After-School Care
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="D:\Sem-3\HTML\Tamplate\Images2\boyskatebordfull.jpg" alt="Happy kid holding yellow skateboard"/>
+    </div>
+  </SECTION>
+	
+</BODY>
+</HTML>
+
